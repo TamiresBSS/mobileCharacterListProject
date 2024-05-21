@@ -69,7 +69,7 @@ function generateProfileCards(filteredCharacters = "") {
         flexWrapper.classList.add('flex', 'justify-corners', 'align-center', 'm-sides', 'mt-03');
 
         const innerFlexWrapper = document.createElement('div');
-        innerFlexWrapper.classList.add('flex');
+        innerFlexWrapper.classList.add('flex', 'gap-1');
 
         const typeParagraph = document.createElement('p');
         typeParagraph.classList.add('text-center', 'boldText', 'wrap', 'p-05', 'c-type');

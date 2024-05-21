@@ -58,6 +58,10 @@ body {
     margin-top: 1em;
 }
 
+.ml-05 {
+    margin-left: 0.5em;
+}
+
 .center {
     margin: auto;
 }
