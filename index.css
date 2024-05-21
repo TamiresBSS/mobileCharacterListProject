@@ -1,0 +1,117 @@
+:root {
+    --colorLight: #d9d9d9;
+    --colorDark: #24292d;
+    --colorBlue: #007bff;
+    --colorYellow: #ffc107;
+    --colorRed: #dc3545;
+    --colorCyanDark: rgba(23, 162, 184, 0.075);
+    --colorYellowDark: rgba(255, 193, 7, 0.075);
+    --colorRedDark: rgba(220, 53, 69, 0.075);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: var(--colorLight);
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    background-color: var(--colorDark);
+}
+
+.container {
+    margin: 1em 0.5em;
+    max-height: 90%;
+}
+
+.wrap {
+    border: 1px black outset;
+    border-radius: 1em;
+    background-color: #2e3236;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-gp {
+    grid-gap: 0.5em;
+}
+
+.p-05 {
+    padding: 0.5em;
+}
+
+.p-1 {
+    padding: 1em;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.center {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-corners {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.gap-1 {
+    gap: 0.5em;
+}
+
+/* Clicáveis */
+
+.btn-sm {
+    text-align: center;
+}
+
+.btn-sm:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Listas */
+
+.ul-list {
+    padding: 0.5em;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.li-item {
+    padding: 0.5em;
+    border: 0.5px var(--colorLight) solid;
+    border-radius: 0.5em;
+}
+
+.li-selected {
+    background-color: var(--colorLight);
+    color: var(--colorDark);
+}

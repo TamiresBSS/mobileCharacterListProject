@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="character.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Personagens</title>
+</head>
+
+<body>
+    <div class="container size justify-center">
+        <nav class="wrap p-1 flex justify-corners align-center">
+            <h3>Celebridades</h3>
+            <div>
+                <span id="sortOpt" class="btn-sm"><img src="/icons/tune.svg" alt="icon"></span>
+            </div>
+        </nav>
+        <div id="sortChars" class="wrap p-1 mt-1 filtro">
+            <form>
+                <fieldset>
+                    <legend>Raridade</legend>
+                    <ul class="filtroRank ul-list flex justify-evenly" data-filter-type="rarity">
+                        <li class="li-item" data-rank-filter="XP">XP</li>
+                        <li class="li-item" data-rank-filter="SP">SP</li>
+                        <li class="li-item" data-rank-filter="UR">UR</li>
+                        <li class="li-item" data-rank-filter="SSR">SSR</li>
+                        <li class="li-item" data-rank-filter="SR">SR</li>
+                        <li class="li-item" data-rank-filter="R">R</li>
+                    </ul>
+                </fieldset>
+                <fieldset class="mt-1">
+                    <legend>Categoria</legend>
+                    <ul class="filtroRank ul-list flex justify-evenly gap-1" data-filter-type="role">
+                        <li class="li-item" data-rank-filter="Healer">Healer</li>
+                        <li class="li-item" data-rank-filter="Control">Control</li>
+                        <li class="li-item" data-rank-filter="Suporte">Suporte</li>
+                        <li class="li-item" data-rank-filter="Tank">Tank</li>
+                        <li class="li-item" data-rank-filter="SubDPS">SubDPS</li>
+                        <li class="li-item" data-rank-filter="DPS">DPS</li>
+                    </ul>
+                </fieldset>
+                <fieldset class="mt-1">
+                    <legend>Posição</legend>
+                    <ul class="filtroRank ul-list flex justify-evenly gap-1" data-filter-type="position">
+                        <li class="li-item" data-rank-filter="Front">Front</li>
+                        <li class="li-item" data-rank-filter="Back">Back</li>
+                        <li class="li-item" data-rank-filter="Ambos">Ambos</li>
+                    </ul>
+                </fieldset>
+                <div class="wrap flex justify-center mt-1">
+                    <span id="clearAll" class="btn-sm flex align-center p-05"><img src="icons/delete.svg"
+                            alt="del-icon">Limpar Filtros</span>
+                </div>
+            </form>
+        </div>
+        <!-- Cards -->
+        <section id="cardSection" class="grid cardContainer mt-1 justify-center">
+            <!-- CARD TEMPLATE -->
+            <!-- <div class="wrap grid">
+                <div class="flex justify-corners align-center m-sides mt-03">
+                    <div class="flex">
+                        <p class="text-center boldText wrap p-05 c-type">SSR</p>
+                        <p class="boldText center m-sides">YueLing</p>
+                    </div>
+                    <p class="boldText wrap p-05 c-type">Healer</p>
+                </div>
+                <p class="cardBD cardDesc m-sides p-05">ft:</p>
+                <div class="cards gap-1 flex p-05">
+                    <div class="grid grid-size">
+                        <img class="cardPhoto center">
+                        <p class="text-center boldText center p-05"></p>
+                        <div class="grid mt-1 center">
+                            <p class="dmg text-center align-center"></p>
+                            <p class="dmg text-center align-center"></p>
+                        </div>
+                    </div>
+                    <div class="cardInfo p-05">
+                        <div class="cardBD cardDesc desc p-05"></div>
+                        <p class="cardBD cardDesc p-05"></p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="index.js"></script>
+    <script type="module" src="sortChars.js"></script>
+</body>
+
+</html>
