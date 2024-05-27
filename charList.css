@@ -1,0 +1,103 @@
+#sortChars {
+    left: 35%;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    /* responsive modal */
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 80%;
+    max-width: max-content;
+    /* max-height: 99%; */
+}
+
+#sortChars.show {
+    left: 35%;
+    position: fixed;
+    display: block;
+    opacity: 1;
+    max-height: 1000px;
+    background-color: rgba(0, 0, 0, 0.77);
+    /* Responsive CSS */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.charName {
+    text-shadow: 2px 2px 1px black;
+}
+
+.boldText {
+    font-weight: 700;
+}
+
+.dmg {
+    padding: 0.1em;
+    margin-top: 0.2em;
+    width: 9cqmax;
+    border-radius: 0.5em;
+    background-color: black;
+}
+
+.cardBD {
+    margin: 0.5em;
+    border-radius: 0.5em;
+    border: 0.05em black inset;
+}
+
+#cardSection {
+    row-gap: 0.5em;
+}
+
+.cardBottom {
+    padding: 1em;
+}
+
+.cardTop {
+    margin-top: 0.5em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+.cardDesc {
+    background-color: #3c3f43;
+}
+
+.cardPhoto {
+    background-color: var(--colorDark);
+    border: 1px var(--colorLight) inset;
+    border-radius: 25em;
+    height: 20cqmin;
+    width: 20cqmin;
+    overflow: hidden;
+    background-position: center;
+}
+
+
+@media (min-width: 700px) {
+    #cardSection {
+        padding: 0.5em;
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(auto-fill, minmax(22em, 30em));
+    }
+
+    .desc {
+        min-height: 9.5em;
+    }
+
+    .cardPhoto {
+        border: 3px var(--colorLight) inset;
+    }
+}
+
+@media (max-width: 700px) {
+    .cardPhoto {
+        background-size: 125%;
+    }
+}
+
+/* @media only screen and (max-width: 600px) and (min-width: 400px) {...}  */
