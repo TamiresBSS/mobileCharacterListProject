@@ -44,7 +44,7 @@ export const allCharacters = {
         "Xatk": "1",
         "Xskill": "-1",
         "team": [],
-        "desc": "Tanto seu ataque básico quanto a habilidade reduzem a fúria do alvo, respectivamente em 10 e 20 pts. Ataca novamente ao acertar crítico (ativa uma única vez por turno).",
+        "desc": "Ambos Atk básico e habilidade reduzem a fúria do alvo, respectivamente em 10 e 20 pts. Ataca novamente ao acertar crítico (ativa uma única vez por turno).",
         "descX": "Aumenta sua própria taxa crítica em 10%."
     },
     "005": {
@@ -68,8 +68,8 @@ export const allCharacters = {
         "Xatk": "1",
         "Xskill": "1",
         "team": [],
-        "desc": "Após usar a habilidade, entra em estado de 'Embriaguez', aumenta o ataque em 8% ( 3xTurnos ; Stack: 4 ). Também se esquiva do próx ataque recebido, e ganha 30 pts de fúria se derrotar o inimigo.",
-        "descX": "Ignora 20% DEF no ataque básico."
+        "desc": "Após usar a habilidade, entra em estado de 'Embriaguez'; aumenta o ataque em 8% por 3 turnos; esquiva do próximo ataque recebido. E ganha 30 pts de fúria se derrotar o inimigo.",
+        "descX": "Ignora 20% DEF no ataque básico. Acúmulo máximo de 'Embriaguez' : 4."
     },
     "007": {
         "rarity": "SSR",
@@ -92,8 +92,8 @@ export const allCharacters = {
         "Xatk": "1",
         "Xskill": "1",
         "team": [],
-        "desc": "Ao usar sua habilidade ativa também o efeito da tinta recebida durante seu turno [Stack max de cada tinta : 6]. Verde : +Taxa crítica | Azul : + Redução de Dano | Vermelho : + Ataque ",
-        "descX": "Ignora 20% DEF no ataque básico."
+        "desc": "Ao usar sua habilidade ativa também o efeito da tinta recebida durante seu turno.\n\nVerde : + Taxa crítica\nAzul : + Redução de Dano\nVermelho : + Ataque ",
+        "descX": "Ignora 20% DEF no ataque básico. Acúmulo máximo de cada tinta : 6."
     },
     "009": {
         "rarity": "SSR",
