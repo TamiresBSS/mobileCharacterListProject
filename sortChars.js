@@ -152,12 +152,14 @@ function generateProfileCards(filteredCharacters) {
 
             const descParagraph = document.createElement('div');
             descParagraph.classList.add('cardBD', 'cardDesc', 'desc', 'p-05');
-            descParagraph.textContent = character.desc;
+            const newDesc = character.desc.replace(/\n/g, '<br>');
+            descParagraph.innerHTML = newDesc;
 
             const additionalInfoParagraph = document.createElement('p');
             additionalInfoParagraph.classList.add('cardBD', 'cardDesc', 'p-05');
+            const newAdInfo = character.descX.replace(/\n/g, '<br>');
+            additionalInfoParagraph.innerHTML = newAdInfo;
 
-            additionalInfoParagraph.textContent = character.descX;
             cardInfoWrapper.appendChild(descParagraph);
             cardInfoWrapper.appendChild(additionalInfoParagraph);
             cardWrapper.appendChild(cardInfoWrapper);
