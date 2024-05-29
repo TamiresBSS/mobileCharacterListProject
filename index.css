@@ -109,3 +109,14 @@ body {
     background-color: var(--colorLight);
     color: var(--colorDark);
 }
+
+/* Teste */
+nav {
+    top: 0;
+    z-index: 5;
+    position: sticky;
+}
+
+#info {
+    display: none;
+}

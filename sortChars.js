@@ -118,9 +118,11 @@ function createTeamLinks(character) {
     const team = character.team.map(memberId => {
         const member = allCharacters[memberId];
         if (member) {
-            return `<a href="">${member.name} </a>`; // Criar link para o perfil do membro da equipe
+            return `<a href="">${member.name} </a>`;
+            // Criar link para o perfil do membro da equipe
         } else {
-            return ""; // Caso o membro da equipe não exista
+            return "";
+            // Caso o membro da equipe não exista
         }
     });
     // console.log(team);
@@ -163,8 +165,9 @@ function generateProfileCards(filteredCharacters) {
 
         const teamsParagraph = document.createElement('p');
         teamsParagraph.classList.add('cardBD', 'cardDesc', 'p-05');
+        teamsParagraph.textContent = 'ft:';
         // teamsParagraph.textContent = 'ft: ' + character.team;
-        teamsParagraph.textContent = 'ft: ' + createTeamLinks(character);
+        // teamsParagraph.textContent = 'ft: ' + createTeamLinks(character);
 
         innerFlexWrapper.appendChild(typeParagraph);
         innerFlexWrapper.appendChild(nameParagraph);
